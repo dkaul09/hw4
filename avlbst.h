@@ -236,7 +236,7 @@ void AVLTree<Key, Value>::insert(const std::pair<const Key, Value> &new_item)
 				while (tree_ptr != NULL) {
 					if (new_item.first == tree_ptr->getKey()) {
 						tree_ptr->setValue(new_item.second);
-						node = new AVLNode<Key,Value>(tree_ptr->getKey(),new_item.second,tree_ptr->getParent());
+						//node = new AVLNode<Key,Value>(tree_ptr->getKey(),new_item.second,tree_ptr->getParent());
 						break;
 					} else if (new_item.first < tree_ptr->getKey()) {
 						 if (tree_ptr->getLeft() == NULL) {
